@@ -1,0 +1,12 @@
+****************
+* 2UV products *
+****************
+
+Export
+------
+C:\> java -jar WVA.vtiger.jar export
+
+Import
+------
+C:\> java -jar WVA.vtiger.jar import filename.xml
+

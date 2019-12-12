@@ -1,0 +1,41 @@
+<root>
+	<url>https://clevermovesconsultants.com/dev-crm/</url>
+	<user>wouter</user>
+	<key>yWd3MIuIfcChEaVe</key>
+        <AccountsQuery>SELECT * FROM Accounts;</AccountsQuery>
+        <UsersQuery>SELECT * FROM Users;</UsersQuery>
+        <!--STANDARD: SELECT * FROM Project WHERE linktoaccountscontacts='" + loOrgId.get(l) + "'; -->
+        <!--EXTEND: THIS ENTRY WILL BE ADDED AFTER THE COMMAND AND BEFORE THE ;-->
+        <ProjectsQueryExtension></ProjectsQueryExtension>
+        <!--STANDARD: SELECT * FROM ProjectTask WHERE projectid='" + paProjectId.toString() + "'; -->
+        <!--EXTEND: THIS ENTRY WILL BE ADDED AFTER THE COMMAND AND BEFORE THE ;-->
+        <TasksQueryExtension></TasksQueryExtension>
+        <Update>
+            <Class Name="Account">
+                <levelIdentifier Name="" tag="/Project/Tasks/Task[OutlineLevel=1]">1</levelIdentifier>
+                <ID Name="id" tag="ExtendedAttribute[1]/Value"></ID>
+                <Properties>
+                    <!--
+                    <Prop Name="projecttaskprogress" tag="PercentComplete"></Prop>                                        
+                    -->
+                </Properties>                
+            </Class>    
+            <Class Name="Project">
+                <!--//Tutorial[descendant::title[text()=" + "'" + name + "'" + "]]-->
+                <levelIdentifier Name="" tag="/Project/Tasks/Task[OutlineLevel=2]">2</levelIdentifier>
+                <ID Name="id" tag="ExtendedAttribute[1]/Value"></ID>                
+                <Properties>
+                    <!--<Prop Name="projecttaskprogress" tag="PercentComplete[1]"></Prop>-->
+                </Properties>      
+            </Class>
+            <Class Name="ProjectTask">
+                <levelIdentifier Name="" tag="/Project/Tasks/Task[OutlineLevel=3]">3</levelIdentifier>
+                <ID Name="id" tag="ExtendedAttribute[1]/Value"></ID>                
+                <Properties>
+                    <Prop Name="startdate" tag="ActualStart[1]">value =  value.toString().split('T')[0];</Prop>
+                    <Prop Name="enddate" tag="ActualFinish[1]">value =  value.toString().split('T')[0];</Prop>
+                    <Prop Name="projecttaskprogress" tag="PercentComplete[1]">value = (parseFloat(0.5) * 100).toString();</Prop>                                        
+                </Properties>      
+            </Class>                    
+        </Update>
+</root>

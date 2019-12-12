@@ -1,0 +1,23 @@
+        <Resource>
+            <UID>6</UID>
+            <ID>1</ID>
+            <Name>$$user_name$$</Name>
+            <Type>1</Type>
+            <IsNull>0</IsNull>
+            <MaxUnits>1</MaxUnits>
+            <PeakUnits>1</PeakUnits>
+            <OverAllocated>0</OverAllocated>
+            <CanLevel>0</CanLevel>
+            <StandardRateFormat>3</StandardRateFormat>
+            <OvertimeRateFormat>3</OvertimeRateFormat>
+            <IsGeneric>0</IsGeneric>
+            <IsInactive>0</IsInactive>
+            <IsEnterprise>0</IsEnterprise>
+            <ExtendedAttribute>
+                <FieldID>205520904</FieldID>
+				<FieldName>VT User ID</FieldName>
+				<Value>$$id$$</Value>
+            </ExtendedAttribute>
+            <AvailabilityPeriods/>
+            <IsBudget>0</IsBudget>
+        </Resource>

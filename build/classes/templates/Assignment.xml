@@ -1,0 +1,8 @@
+        <Assignment>
+            <UID>9</UID>
+            <TaskUID>17</TaskUID>
+            <ResourceUID>3</ResourceUID>
+            <Units>1</Units> 
+            <HasFixedRateUnits>1</HasFixedRateUnits>
+            <FixedMaterial>0</FixedMaterial>                       
+        </Assignment>

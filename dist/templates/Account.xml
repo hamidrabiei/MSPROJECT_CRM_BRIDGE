@@ -1,0 +1,14 @@
+        <Task>
+            <UID>9</UID>
+            <ID>1</ID>
+            <Name>$$accountname$$</Name>
+            <IsNull>0</IsNull>
+            <WBS>1</WBS>
+            <OutlineNumber>1</OutlineNumber>
+            <OutlineLevel>1</OutlineLevel>           
+            <ExtendedAttribute>
+                <FieldID>188743731</FieldID>
+				<FieldName>VT ID</FieldName>				
+                <Value>$$id$$</Value>
+            </ExtendedAttribute>				
+        </Task>

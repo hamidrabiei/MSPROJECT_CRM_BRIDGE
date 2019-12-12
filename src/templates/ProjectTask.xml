@@ -1,0 +1,19 @@
+        <Task>
+            <UID>9</UID>
+            <ID>1</ID>
+            <Name>$$projecttaskname$$</Name>
+            <IsNull>0</IsNull>
+            <WBS>4.1.2</WBS>
+            <OutlineNumber>4.1.2</OutlineNumber>
+            <OutlineLevel>3</OutlineLevel>
+            <Start>$$startdate$$T00:00:00</Start>
+            <Finish>$$enddate$$T00:00:00</Finish>
+            <ActualStart>$$startdate$$T00:00:00</ActualStart>
+            <ActualFinish>$$enddate$$T00:00:00</ActualFinish>
+            <PercentComplete>0</PercentComplete>
+            <ExtendedAttribute>
+                <FieldID>188743731</FieldID>
+		<FieldName>VT ID</FieldName>				
+                <Value>$$id$$</Value>
+            </ExtendedAttribute>
+        </Task>
